@@ -10,3 +10,5 @@ UI/SQL/Code - '' Name '' - Updated
 '' Update Description ''
 
 ## GENERAL GITHUB NOTES
+
+## HOW TO SET UP SERVER
