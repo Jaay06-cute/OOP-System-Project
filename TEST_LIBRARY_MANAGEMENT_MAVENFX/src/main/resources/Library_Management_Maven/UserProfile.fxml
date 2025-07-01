@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="HomeContainer" fx:id="UserViewContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #9E9E9E;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Library_Management_Maven.ViewController.UserProfileViewController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+         <left>
+            <VBox prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #ab2e22;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox fx:id="ProfileButton" onMouseClicked="#ProfileViewSelect" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="black_profile" fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/acccount_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ProfileLabel" text="Profile">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="ReservationButton" onMouseClicked="#GotoReservation" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="black_reservation" fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/calendar_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="ReservationLabel" text="Reservation">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="BooksButton" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="black_books" fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/menu_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="BooksLabel" text="Favorites">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="HistoryButton" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="black_history" fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/history_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="HistoryLabel" text="History">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="NotificationButton" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="black_notification" fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/notification_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="NotificationLabel" text="Notification">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="SignOutButton" prefHeight="60.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="black_signout" fitHeight="40.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/logout_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="SignoutLabel" text="Sign Out">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="200.0">
+                           <children>
+                              <TextField id="TextBoxSearch" fx:id="TextBoxSearch" focusTraversable="false" maxWidth="250.0" minWidth="250.0" prefHeight="40.0" prefWidth="50.0" promptText="Search for books" style="-fx-background-radius: 12;">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </TextField>
+                              <Button id="SearchButton" fx:id="SearchButton" focusTraversable="false" mnemonicParsing="false" onAction="#GotoSearch" prefHeight="40.0" prefWidth="80.0" text="SEARCH">
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Label text="Library Portal">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="125.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icon/um_logo.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                        </HBox>
+                        <ImageView fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/linebar_design.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane id="ProfileContainer" fx:id="ViewContainer" prefHeight="480.0" prefWidth="760.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="480.0" prefWidth="760.0" spacing="25.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="350.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Icon/acccount_icon.png" />
+                                                   </image>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <Label text="Profile">
+                                             <font>
+                                                <Font name="Arial" size="33.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefWidth="350.0" style="-fx-background-color: #C9C9C9;" text="NAME:">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefWidth="350.0" style="-fx-background-color: #C9C9C9;" text="EMAIL">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label prefWidth="350.0" style="-fx-background-color: #C9C9C9;" text="ID NUMBER: ">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets top="15.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="350.0">
+                                       <children>
+                                          <Label text="Books to be returned:">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <ListView focusTraversable="false" prefHeight="400.0" prefWidth="0.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

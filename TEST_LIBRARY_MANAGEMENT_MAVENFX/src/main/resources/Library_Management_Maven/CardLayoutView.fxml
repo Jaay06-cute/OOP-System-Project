@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CardLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="724.0" style="-fx-background-color: #E0E0E0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Library_Management_Maven.ViewController.CardLayoutController">
+   <children>
+      <HBox prefHeight="150.0" prefWidth="724.0">
+         <children>
+            <HBox onMouseClicked="#GotoBookView" prefHeight="100.0" prefWidth="625.0">
+               <children>
+                  <ImageView id="BookImage" fx:id="BookImage" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/icon_project/book1.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox maxWidth="547.0" prefHeight="150.0" prefWidth="500.0" spacing="10.0">
+                     <children>
+                        <HBox prefHeight="27.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="108.0" text="Book Title:">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label id="BookTitle" fx:id="BookTitle" prefHeight="27.0" prefWidth="438.0" text="Never Ending Sky ">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="27.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="77.0" text="Author:">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label id="BookAuthor" fx:id="BookAuthor" prefHeight="27.0" prefWidth="438.0" text="Joseph KirkLand">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="27.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="221.0" text="Date of Published:">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label id="BookDateOfPublished" fx:id="BookDateofPublished" prefHeight="27.0" prefWidth="438.0" text="10/02/2018">
+                                 <font>
+                                    <Font name="Arial" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+               <children>
+                  <Label id="BookTitle" fx:id="BookStatus" prefHeight="27.0" prefWidth="438.0" text="BORROWED" textFill="RED">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView id="FavoriteImage" fx:id="BookFavorite" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/icon_project/favorite_icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
