@@ -30,6 +30,7 @@ public class LoginRegisterView extends Application {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        System.out.println("ambut hahaha ");
         launch();
     }
     
