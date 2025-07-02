@@ -1,4 +1,4 @@
-# UM LIBRARY MANAGEMENT SYSTEM
+# [DEVELOPER] UM LIBRARY MANAGEMENT SYSTEM
 
 ## GENERAL COMMIT FORMAT
 You should format your comments in the UI like this:
