@@ -4,6 +4,18 @@
  */
 package Library_Management_Maven.Authentication;
 
+/**
+ *
+ * @author Ravin
+ */
+
+enum AccessStatus {
+    GRANTED,
+    DENIED,
+    SUSPENDED,
+    READ_ONLY;
+}
+
 interface Identifiable {
     int getIDNumber();
 }

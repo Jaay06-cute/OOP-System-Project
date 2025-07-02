@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Library_Management_Maven.Authentication;
-import Library_Management_Maven.Authentication.User;
         
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
@@ -43,7 +42,7 @@ public class UserDAO<T extends Identifiable> {
         return null;
     }
     
-    // UPDATE
+    // UPDATE TO COME!!!! sabutan pa ni siya
     
     // DELETE
     public boolean deleteUser(int id) {

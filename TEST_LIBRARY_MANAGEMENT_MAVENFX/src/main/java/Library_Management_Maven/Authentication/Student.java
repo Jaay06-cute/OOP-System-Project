@@ -8,6 +8,8 @@ package Library_Management_Maven.Authentication;
  *
  * @author Ravin
  */
-public class Student {
-    
+public class Student extends User {
+    public Student(String firstName, String lastName, int idNumber, String email){
+        super(firstName, lastName, idNumber, email);
+    }
 }

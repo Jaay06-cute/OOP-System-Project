@@ -8,6 +8,12 @@ package Library_Management_Maven.Authentication;
  *
  * @author Ravin
  */
-public class Admin {
+public class Admin extends User {
+    private AccessStatus accessStatus = AccessStatus.GRANTED;
     
+    public Admin(String firstName, String lastName, int idNumber, String email){
+        super(firstName, lastName, idNumber, email);
+    }
+    
+    public AccessStatus checkAccessStatus() { return accessStatus; }
 }
