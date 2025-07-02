@@ -7,6 +7,7 @@ package Library_Management_Maven.Authentication;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -40,6 +41,12 @@ public class UserDAO<T extends Identifiable> {
             }
         }
         return null;
+    }
+    
+    // VALIDATE IF USER HAS PROPER EMAIL + HAS ID NUMBER
+    public boolean authenticateUser(T user) {
+        return ((user.getEmail().endsWith("@umindanao.edu.ph")) || 
+                (Objects.nonNull(user.getIDNumber())));
     }
     
     // UPDATE TO COME!!!! sabutan pa ni siya
