@@ -1,0 +1,11 @@
+.box-layout{
+    -fx-background-color:  white ;
+    -fx-background-radius: 12;
+}
+.box-layout:hover{
+    -fx-background-color:  #C9C9C9;
+}
+.textcolor:hover{
+     -fx-font-weight:  bold;
+}
+

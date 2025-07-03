@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="FavoriteLayout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="705.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Library_Management_Maven.ViewController.FavoritePanelController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" spacing="10.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView id="BookImage" fx:id="BookImage" fitHeight="130.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/book1.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefWidth="290.0" spacing="10.0">
+               <children>
+                  <HBox prefHeight="21.0" prefWidth="300.0">
+                     <children>
+                        <Label prefHeight="21.0" text="Book Title:">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="BookTitle" fx:id="BookTitle" prefHeight="27.0" text="Never Ending Sky ">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="21.0" prefWidth="300.0">
+                     <children>
+                        <Label prefHeight="21.0" text="Author:">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="BookAuthor" fx:id="BookAuthor" prefHeight="27.0" text="Joseph KirkLand">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="18.0" prefWidth="300.0">
+                     <children>
+                        <Label prefHeight="18.0" text="Date of Published:">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label id="BookDateOfPublished" fx:id="BookDateofPublished" prefHeight="27.0" text="10/02/2018">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="140.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="BookStatus" text="AVAILABLE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AvailableDate" textFill="RED">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="CancelPane" alignment="CENTER" prefWidth="90.0" style="-fx-background-color: #5fb643;">
+               <children>
+                  <Label fx:id="BookBorrow" text="BORROW">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="30.0" top="30.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="CancelPane1" alignment="CENTER" prefHeight="100.0" prefWidth="30.0" style="-fx-background-color: transparent;">
+               <children>
+                  <ImageView fx:id="BookCancel" fitHeight="30.0" fitWidth="50.0" onMouseClicked="#RemoveBookFavorite" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icon/close_icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
